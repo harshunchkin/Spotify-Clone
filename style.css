@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: black;
+}
+:root{
+  --a:0%;
+}
+.whole {
+  background-color: rgb(0, 0, 0);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+
+.left {
+  width: 25vw;
+  position: relative;
+  /* border; */
+  /* border: 1px solid rgb(18,18,18,1); */
+  /* border-radius: 7px; */
+}
+.right {
+  width: 75vw;
+  position: relative;
+  /* border: 2px solid rgb(255, 0, 0); */
+  /* border: 1px solid rgb(18,18,18,1); */
+  /* border-radius: 7px; */
+}
+
+.legend ul {
+  /* list-style: none; */
+  margin: 0px;
+  padding: 0px;
+}
+
+.legend ul li {
+  display: flex;
+  list-style: none;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 20px;
+  padding: 8px 0px;
+}
+
+.bg-grey {
+  background-color: rgba(18, 18, 18, 0.98);
+}
+
+.bg-somegrey {
+  background-color: rgb(25, 25, 25, 0.99);
+}
+
+/* your library */
+.heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.library {
+  height: 70vh;
+  position: relative;
+}
+/* footer links */
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  gap: 12px;
+  font-size: 12px;
+  padding: 0px 0px 8px;
+}
+.footer a {
+  color: grey;
+  text-decoration: none;
+}
+
+/* right side header login and sign up */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signinbtn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  border-style: none;
+  color: grey;
+  outline-style: none;
+  padding: 0px 24px;
+  font-size: 14px;
+}
+.signinbtn:hover {
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 15px;
+}
+.loginbtn {
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border-style: none;
+}
+.loginbtn:hover {
+  cursor: pointer;
+}
+
+/* right playlist styling */
+.containercards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.playlistcard {
+  width: 207px;
+  padding: 10px;
+  background-color: rgba(25, 25, 25, 0.99);
+  border-radius: 8px;
+  position: relative;
+  transition: all 1s ;
+}
+
+.playlistcard > * {
+  padding-top: 10px;
+}
+
+.playlistcard:hover{
+  cursor: pointer;
+  background-color: rgba(65, 65, 65, 0.815);
+  --a:1;
+  opacity: var(--a);
+}
+/* play button */
+.play{
+    position: absolute;
+    bottom: 0px;
+    top: 164px;
+    right: 16px;
+    opacity: var(--a);
+    transition: all 0.5s ease-out;
+}
+
+.spotifyplaylist > h1 {
+  padding: 12px;
+}
+
+/* songlist in left under your library */
+.songlist {
+  height: 344px;
+  overflow: auto;
+  margin: 32px 0px;
+  cursor: pointer;
+}
+.songlist .info {
+  /* list-style-type: decimal; */
+  /* padding: 0 2px; */
+  font-size: 12px;
+  width: 344px;
+}
+
+.songlist ul li {
+  list-style-type: decimal;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 12px 0px;
+  border-radius: 10px;
+}
+
+/* playbar */
+.playbar {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 21px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 12px 0px;
+    background-color: rgba(14, 21, 17, 0.932);
+    width: 50%;
+    border-radius: 32px;
+    height: 52px;
+    border-radius: 32px;
+}
+
+.songbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /* top: 25px; */
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* left: 42%; */
+    /* right: 0; */
+    /* text-align: center; */
+    /* top: 25px; */
+}
+.songbutton img {
+  cursor: pointer;
+}
+.seekbar {
+  position: absolute;
+  border: 4px solid rgb(80, 45, 45);
+  border-radius: 6px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 9px;
+  /* margin: auto; */
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  width: 24px;
+  height: 11px;
+  border-radius: 32px;
+  border: 2px solid white;
+  background-color: black;
+  bottom: -7px;
+  left: -2px;
+  transition: left 0.4s;
+}
+
+/* song info and time */
+.songinfo{
+  position: relative;
+  z-index: 20;
+}
+.songtime{
+  position: relative;
+  z-index: 20;
+}
+.infotbut {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 300px; */
+    align-items: center;
+    padding: 0px 30px;
+    margin: 12px 0px
+}
+
+.hamburger {
+  display: none;
+}
+
+.close {
+  /* display: hidden; */
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  display: none;
+}
+.close img {
+  display: none;
+}
+
+/* volume and time */
+/* .timevol{
+  display: flex;
+  /* flex-direction: row; */
+  /* gap: 25px;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .volume img{
+  cursor: pointer;
+}
+.rangev{
+  background-color: aquamarine;
+  cursor: pointer;
+} */
+/* media queries */
+@media (max-width: 500px) {
+  .hamburger {
+    display: inline;
+  }
+  .close {
+    display: inline;
+  }
+  .close img {
+    display: block;
+  }
+  .left {
+    position: absolute;
+    left: -100%;
+    transition: all ease-in 0.2s;
+    z-index: 1;
+    width: 90vw;
+    /* later see if px will be better */
+  }
+
+  .right {
+    width: 100vw;
+    position: relative;
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* border: 1px solid rgb(18,18,18,1); */
+    /* border-radius: 7px; */
+  }
+  .containercards {
+    justify-content: center;
+    max-height: 100vh;
+  }
+
+  .right {
+    margin: 0px;
+  }
+
+  .songinfo {
+    width: 80px;
+    font-size: small;
+    /* overflow-x: auto; */
+    word-break: break-all;
+    font-size: 12px;
+  }
+  .songbutton img{
+    width: 18px;
+  }
+
+  .songtime {
+    font-size: 12px;
+  }
+  .playbar{
+    width: 90%;
+        height: 65px;
+  }
+
+  .infotbut{
+    /* margin: 12; */
+    padding: 0px 6px;
+  }
+}

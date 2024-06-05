@@ -1,0 +1,75 @@
+/* these are utlities which can be used on any of the elements */
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+*{
+    /* background-color: black; */
+    /* margin: 4px; */
+    color: white;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.padded{
+    padding: 12px;
+}
+
+.border{
+    /* border: 2px solid red; */
+    margin: 6px;
+}
+
+/* margin between legend and library */
+.m1-m{
+    margin-top: 6px;
+}
+
+.p1{
+ padding: 20px;
+}
+/* hard border for everything */
+.borderrad{
+    border-radius: 8px;
+}
+/* soft border for header */
+.brad-header{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* padding across right */
+.majpad{
+    padding: 16px;
+}
+
+@media (max-width:500px){
+    .border{
+        margin: 0px;
+    }
+}
